@@ -12,7 +12,47 @@ a
 	text-decoration: none
 .box_bg
 	background: rgba(38, 169, 224, 0.05)
-
+	
+.box__circles
+	position: relative
+.box__circle-1
+	position: absolute
+	top: 375px
+.box__circle-2
+	position: absolute
+	top: -330px
+	left: -70px
+.box__circle-3
+	position: absolute
+	top: 430px
+	right: 35px
+.box__circle-4
+	position: absolute
+	top: 325px
+	
+.box__circle-5
+	position: absolute
+	top: -350px
+	right: -730px
+.box__circle-6
+	position: absolute
+	top: 250px
+.box__circle-7
+	position: absolute
+	top: 95px
+	right: 0
+.box__circle-8
+	position: absolute
+	top: 730px
+	right: 0
+.box__circle-9
+	position: absolute
+	top: 75px
+	right: 0
+.box__circle-10
+	position: absolute
+	top: 525px
+	right: 150px
 .box__container
 	max-width: 1150px
 	width: 100%
@@ -60,10 +100,12 @@ a
 	text-align: center
 
 .box__header 
-	
+	.box__content
+		margin: 140px 0 320px
 	.box__content_left 
 		width: 620px
-		margin: 220px 70px 0 0;
+		margin-right: 70px
+		position: relative 
 		.box__title
 			width: 560px
 			font-size: 72px
@@ -74,14 +116,15 @@ a
 			margin-bottom: 85px
 		
 	.box__content_right 
-			
+		position: relative 
 		.box__image
-			
+			position: absolute
+			top: -600px
+			z-index: -1 
 
 	.box__button
 		width: 250px
 		height: 80px
-		margin-bottom: 320px
 
 .box__first-step
 	.box__content
@@ -106,9 +149,11 @@ a
 		margin-right: 80px
 		
 	.box__content_right
+		position: relative
+		
 		.box__image
 			position: absolute
-			top: 1670px
+			top: -450px
 			z-index: -1
 			
 
@@ -124,6 +169,7 @@ a
 			margin-bottom: 25px
 			
 .box__constructor
+	position: relative
 	.box__content
 		margin: 140px 0
 	.box__content_left
