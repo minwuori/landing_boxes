@@ -61,11 +61,11 @@ a {
 
 .box__circle-10 {
   position: absolute;
-  top: 525px;
+  top: 560px;
   right: 150px; }
 
 .box__container {
-  max-width: 1150px;
+  max-width: 1260px;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -136,21 +136,24 @@ a {
   width: 620px;
   margin-right: 70px;
   position: relative; }
-  .box__header .box__content_left .box__title {
-    width: 560px;
-    font-size: 72px;
-    line-height: 73px;
-    margin-bottom: 40px; }
-  .box__header .box__content_left .box__text {
-    padding-right: 10px;
-    margin-bottom: 85px; }
+
+.box__header .box__title {
+  width: 560px;
+  font-size: 72px;
+  line-height: 73px;
+  margin-bottom: 40px; }
+
+.box__header .box__text {
+  padding-right: 10px;
+  margin-bottom: 85px; }
 
 .box__header .box__content_right {
   position: relative; }
-  .box__header .box__content_right .box__image {
-    position: absolute;
-    top: -600px;
-    z-index: -1; }
+
+.box__header .box__image {
+  position: absolute;
+  top: -600px;
+  z-index: -1; }
 
 .box__header .box__button {
   width: 250px;
@@ -166,10 +169,12 @@ a {
 
 .box__first-step .box__content_right {
   width: 600px; }
-  .box__first-step .box__content_right .box__title {
-    margin-bottom: 50px; }
-  .box__first-step .box__content_right .box__text {
-    width: 460px; }
+
+.box__first-step .box__title {
+  margin-bottom: 50px; }
+
+.box__first-step .box__text {
+  width: 460px; }
 
 .box__second-step .box__content {
   margin: 215px 0 240px; }
@@ -180,19 +185,20 @@ a {
 
 .box__second-step .box__content_right {
   position: relative; }
-  .box__second-step .box__content_right .box__image {
-    position: absolute;
-    top: -450px;
-    z-index: -1; }
+
+.box__second-step .box__image {
+  position: absolute;
+  top: -450px;
+  z-index: -1; }
 
 .box__third-step .box__content_left {
   margin-right: 135px; }
 
-.box__third-step .box__content_right .box__text {
+.box__third-step .box__text {
   margin-bottom: 30px;
   width: 500px; }
 
-.box__third-step .box__content_right .box__image {
+.box__third-step .box__image {
   margin-bottom: 25px; }
 
 .box__constructor {
@@ -201,10 +207,10 @@ a {
     margin: 140px 0; }
   .box__constructor .box__content_left {
     width: 710px; }
-    .box__constructor .box__content_left .box__title {
-      margin-bottom: 40px; }
-    .box__constructor .box__content_left .box__text {
-      margin-bottom: 30px; }
+  .box__constructor .box__title {
+    margin-bottom: 40px; }
+  .box__constructor .box__text {
+    margin-bottom: 30px; }
   .box__constructor .box__button {
     width: 320px;
     height: 80px;
@@ -220,3 +226,15 @@ a {
             align-items: center; }
   .box__constructor .box__text_gray {
     text-decoration: underline; }
+
+@media (max-width: 1850px) {
+  .box__circle-8 {
+    display: none; }
+  .box__circle-7 {
+    display: none; } }
+
+@media (max-width: 1550px) {
+  .box__circle-1 {
+    display: none; }
+  .box__circle-9 {
+    display: none; } }
