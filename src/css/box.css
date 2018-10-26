@@ -61,7 +61,7 @@ a {
 
 .box__circle-10 {
   position: absolute;
-  top: 560px;
+  top: 670px;
   right: 150px; }
 
 .box__container {
@@ -206,7 +206,7 @@ a {
   .box__constructor .box__content {
     margin: 140px 0; }
   .box__constructor .box__content_left {
-    width: 710px; }
+    width: 610px; }
   .box__constructor .box__title {
     margin-bottom: 40px; }
   .box__constructor .box__text {
