@@ -23,8 +23,8 @@ a {
 
 .box__circle-2 {
   position: absolute;
-  top: -330px;
-  left: -70px; }
+  top: 60px;
+  left: 100px; }
 
 .box__circle-3 {
   position: absolute;
@@ -56,13 +56,18 @@ a {
 
 .box__circle-9 {
   position: absolute;
-  top: 75px;
+  top: 140px;
   right: 0; }
 
 .box__circle-10 {
   position: absolute;
   top: 740px;
   right: 150px; }
+
+.box__circle-11 {
+  position: absolute;
+  top: -70px;
+  left: 0; }
 
 .box__container {
   max-width: 1260px;
@@ -166,12 +171,10 @@ a {
   height: 80px; }
 
 .box__first-step .box__content {
-  margin: 70px 0; }
+  margin: 70px 0 0; }
 
 .box__first-step .box__content_left {
-  position: relative;
-  left: -45px;
-  margin-right: 185px; }
+  margin-right: 100px; }
 
 .box__first-step .box__content_right {
   width: 600px; }
@@ -197,14 +200,14 @@ a {
   top: -450px;
   z-index: -1; }
 
-.box__third-step .box__content_left {
-  margin-right: 135px; }
-
-.box__third-step .box__text {
-  width: 500px; }
-
-.box__third-step .box__image {
-  margin-bottom: 40px; }
+.box__third-step {
+  position: relative; }
+  .box__third-step .box__content_left {
+    margin-right: 155px; }
+  .box__third-step .box__text {
+    width: 500px; }
+  .box__third-step .box__image {
+    margin-bottom: 40px; }
 
 .box__constructor {
   position: relative; }
@@ -212,13 +215,24 @@ a {
     margin: 90px 0; }
   .box__constructor .box__content_left {
     width: 500px;
-    margin-right: 30px; }
+    margin-right: 135px; }
   .box__constructor .box__title {
     margin-bottom: 40px; }
-  .box__constructor .box__button {
-    width: 320px;
-    height: 80px;
-    margin-right: 30px; }
+  .box__constructor .box__image {
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .box__constructor .box__image a {
+      text-decoration: underline;
+      width: 220px; }
+    .box__constructor .box__image img {
+      margin-right: 20px; }
   .box__constructor .box__link {
     display: -webkit-box;
     display: -webkit-flex;
@@ -230,8 +244,6 @@ a {
             align-items: center; }
   .box__constructor .box__text_gray {
     line-height: 19px; }
-  .box__constructor a.box__text_gray {
-    text-decoration: underline; }
 
 @media (max-width: 1850px) {
   .box__circle-8 {
@@ -242,5 +254,9 @@ a {
 @media (max-width: 1550px) {
   .box__circle-1 {
     display: none; }
+  .box__circle-2 {
+    display: none; }
   .box__circle-9 {
+    display: none; }
+  .box__circle-11 {
     display: none; } }

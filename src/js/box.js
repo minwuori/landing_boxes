@@ -31,8 +31,8 @@ $(function () {
         });
 
         $('.box__circle-2').css({
-            left: -e.pageX / 20,
-            top: -e.pageY / 15 - 330
+            left: -e.pageX / 30 + 100,
+            top: -e.pageY / 15 + 60
         });
         $('.box__circle-3').css({
             left: e.pageX / 50 + 450,
