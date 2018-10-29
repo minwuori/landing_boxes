@@ -61,7 +61,7 @@ a {
 
 .box__circle-10 {
   position: absolute;
-  top: 670px;
+  top: 700px;
   right: 150px; }
 
 .box__container {
@@ -85,7 +85,7 @@ a {
   font-size: 24px;
   line-height: 26px;
   text-align: left;
-  margin-bottom: 15px; }
+  margin-bottom: 40px; }
 
 .box__text_accent {
   font-weight: bold; }
@@ -173,7 +173,7 @@ a {
   width: 600px; }
 
 .box__first-step .box__title {
-  margin-bottom: 50px; }
+  margin-bottom: 40px; }
 
 .box__first-step .box__text {
   width: 460px; }
@@ -197,26 +197,23 @@ a {
   margin-right: 135px; }
 
 .box__third-step .box__text {
-  margin-bottom: 30px;
   width: 500px; }
 
 .box__third-step .box__image {
-  margin-bottom: 25px; }
+  margin-bottom: 40px; }
 
 .box__constructor {
   position: relative; }
   .box__constructor .box__content {
     margin: 140px 0; }
   .box__constructor .box__content_left {
-    width: 610px; }
+    width: 525px; }
   .box__constructor .box__title {
     margin-bottom: 40px; }
-  .box__constructor .box__text {
-    margin-bottom: 30px; }
   .box__constructor .box__button {
     width: 320px;
     height: 80px;
-    margin-right: 20px; }
+    margin-right: 30px; }
   .box__constructor .box__link {
     display: -webkit-box;
     display: -webkit-flex;
@@ -227,6 +224,8 @@ a {
         -ms-flex-align: center;
             align-items: center; }
   .box__constructor .box__text_gray {
+    line-height: 19px; }
+  .box__constructor a.box__text_gray {
     text-decoration: underline; }
 
 @media (max-width: 1850px) {
