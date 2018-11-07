@@ -51,7 +51,7 @@ gulp.task('css-libs', ['sass'], function() {
 
 gulp.task('pug', function() {
     return gulp.src('src/*.pug')
-        .pipe(using({prefix:'Using file', path:'relative', color:'blue', filesize:true}))
+        .pipe(using({prefix:'Using file', path:'relative', color:'yellow', filesize:true}))
         .pipe(plumber())
         .pipe(pug({ pretty: true }))
         .pipe(gulp.dest('dist'))

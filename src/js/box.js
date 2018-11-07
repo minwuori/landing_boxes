@@ -34,12 +34,12 @@ $(function () {
             left: -e.pageX / 30 + 100,
             top: -e.pageY / 15 + 60
         });
-        $('.box__circle-3').css({
-            left: e.pageX / 50 + 450,
-            top: e.pageY / 30 + 430
-        });
+        // $('.box__circle-3').css({
+        //     left: e.pageX / 50 + 450,
+        //     top: -e.pageY / 30 + 430
+        // });
         $('.box__circle-5').css({
-            left: e.pageX / 50 + 630,
+            left: e.pageX / 50 + 600,
             top: e.pageY / 50 - 350
         });
         $('.box__circle-4').css({
@@ -52,7 +52,7 @@ $(function () {
         });
         $('.box__circle-8').css({
             // right: e.pageX / 30,
-            top: e.pageY / 25 + 730
+            top: e.pageY / 25 + 800
         });
     });
 });
