@@ -1,34 +1,7 @@
-// var boxCircles = document.getElementsByClassName("box__header");
-// var circle = document.getElementsByClassName("circle-2");
-// var maxMove = boxCircles.offsetWidth / 30;
-// var circleCenterX = circle.offsetLeft + (circle.offsetWidth / 2);
-// var circleCenterY = circle.offsetTop + (circle.offsetHeight / 2);
-// var fluidcircle = window.matchMedia("(min-width: 726px)");
-
-// function getMousePos(xRef, yRef) {
-//    let panelRect = boxCircles.getBoundingClientRect();
-//    return {
-    //    x: Math.floor(xRef - panelRect.left) /(panelRect.right-panelRect.left)*boxCircles.offsetWidth,
-//        y: Math.floor(yRef - panelRect.top) / (panelRect.bottom -panelRect.top) * boxCircles.offsetHeight
-//     };
-// }
-
-// document.body.addEventListener("mousemove", function(e) {
-//   let mousePos = getMousePos(e.clientX, e.clientY),
-//   distX = mousePos.x - circleCenterX,
-//   distY = mousePos.y - circleCenterY;
-//   if (Math.abs(distX) < 500 && distY < 200 && fluidcircle.matches) {
-//   circle.style.transform = "translate("+(-1*distX)/12+"px,"+(-1*distY)/12+"px)";
-//     // boxCircles.style.backgroundPosition = `calc(50% + ${distX/50}px) calc(50% + ${distY/50}px)`;
-//   }
-// })
-
 $(document).ready(function() {
 
     var sliderLine = document.querySelector('.controller_line');
     var sliderController = document.querySelector('.controller');
-    // var sliderButtonBefore = document.querySelector('.slider_button_before');
-    // var sliderButtonAfter = document.querySelector('.slider_button_after');
     var imgContainer = document.querySelector('.img_container');
     var overlayImg = document.querySelector('.overlay'); // изображение-оверлей
 
@@ -39,20 +12,6 @@ $(document).ready(function() {
 
     //Вычислим заранее крайнее правое положение для ползунка и запишем в переменную. Для этого вычтем из ширины полосы слайдера ширину ползунка.
     var sliderControllerMaxRight = sliderLine.offsetWidth - sliderController.offsetWidth;
-
-    // //По нажатию на кнопку "Было" ставим ширину оверлея в 0, ползунок ставим в крайнюю левую позицию, тоесть тоже в 0.
-    // sliderButtonBefore.addEventListener('click', function() {
-    //   overlayImg.style.width = 0 + 'px';
-    //   sliderController.style.left = 0 + 'px';
-    // });
-
-    //По нажатию на кнопку "Стало" ставим ширину оверлея на максимум, ползунок уводим в крайнее правое положение.
-    //1. Для этого ширину оверлея ставим равной ширине контейнера для изображений.
-    //2. Подставляем рассчитанное ранее значение для крайнего правого положения для ползунка.
-    // sliderButtonAfter.addEventListener('click', function() {
-    //   overlayImg.style.width = imgContainer.offsetWidth + 'px'; //1//
-    //   sliderController.style.left = sliderControllerMaxRight + 'px'; //2//
-    // });
 
     //Отлавливаем нажатие на ползунок, затем перемещаем его.
     //1. Получаем координаты ползунка через нашу написанную функцию (.см в конце).
@@ -100,38 +59,5 @@ $(document).ready(function() {
         left: box.left + pageXOffset // страницы .pageY(Х)Offset возвращает текущую вертикальную(горизонтальную прокрутку).//
       };
     }
-
-
-
-
-    $(document).on('mousemove', function (e) {
-        $('.circle-1').css({
-            top: e.pageY / 10 + 375
-        });
-
-        $('.circle-2').css({
-            left: -e.pageX / 30 + 100,
-            top: -e.pageY / 15 + 60
-        });
-        // $('.circle-3').css({
-        //     left: e.pageX / 50 + 450,
-        //     top: -e.pageY / 30 + 430
-        // });
-        $('.circle-5').css({
-            left: e.pageX / 50 + 600,
-            top: e.pageY / 50 - 350
-        });
-        $('.circle-4').css({
-            left: e.pageX / 30,
-            top: -e.pageY / 25 + 325
-        });
-        $('.circle-7').css({
-            // right: e.pageX / 30,
-            top: -e.pageY / 25 + 95
-        });
-        $('.circle-8').css({
-            // right: e.pageX / 30,
-            top: e.pageY / 25 + 800
-        });
-    });
+    
 });

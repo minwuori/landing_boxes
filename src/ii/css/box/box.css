@@ -19,21 +19,23 @@ a {
 
 .circle-1 {
   position: absolute;
-  top: 375px; }
+  top: 68px; }
 
 .circle-2 {
   position: absolute;
-  top: 60px;
-  left: 100px; }
+  top: 440px;
+  right: 525px; }
 
 .circle-4 {
   position: absolute;
-  top: 325px; }
+  top: 165px;
+  z-index: 2; }
 
 .circle-5 {
   position: absolute;
-  top: -350px;
-  right: -730px; }
+  top: 240px;
+  right: -795px;
+  z-index: 2; }
 
 .circle-6 {
   position: absolute;
@@ -51,17 +53,16 @@ a {
 
 .circle-9 {
   position: absolute;
-  top: 140px;
   right: 0; }
 
 .circle-10 {
   position: absolute;
-  top: 585px;
-  right: 150px; }
+  top: 170px;
+  left: 150px; }
 
 .circle-11 {
   position: absolute;
-  top: -70px;
+  top: -360px;
   left: 0; }
 
 .container {
@@ -194,11 +195,10 @@ a {
     opacity: 1; }
 
 .box__prime .content {
-  margin: 140px 0 320px; }
+  margin: 140px 0 170px; }
 
 .box__prime .content_left {
   width: 620px;
-  margin-right: 70px;
   position: relative; }
 
 .box__prime .title {
@@ -220,7 +220,7 @@ a {
 
 .box__prime .image {
   position: absolute;
-  top: -600px;
+  top: -505px;
   z-index: -1; }
 
 .box__prime .button {
@@ -236,35 +236,35 @@ a {
 .box__first-step .content_right {
   width: 600px; }
 
+.box__first-step .image {
+  margin-top: 170px; }
+
 .box__first-step .title {
   margin-bottom: 40px; }
 
 .box__first-step .text {
   width: 460px; }
 
-.box__second-step .content {
-  margin: 215px 0 240px; }
-
-.box__second-step .content_left {
-  width: 460px;
-  margin-right: 80px; }
-
-.box__second-step .content_right {
+.box__second-step {
   position: relative; }
-
-.box__second-step .image {
-  position: absolute;
-  top: -450px;
-  z-index: -1; }
+  .box__second-step .content {
+    margin: 215px 0 240px; }
+  .box__second-step .content_left {
+    width: 460px;
+    margin-right: 100px; }
+  .box__second-step .content_right {
+    position: relative; }
+  .box__second-step .image {
+    position: absolute;
+    top: -410px;
+    z-index: -1; }
 
 .box__third-step {
   position: relative; }
   .box__third-step .content_left {
-    margin-right: 155px; }
+    margin: 117px 155px 117px 0; }
   .box__third-step .text {
     width: 500px; }
-  .box__third-step .image {
-    margin-bottom: 40px; }
 
 .box__constructor {
   position: relative; }
