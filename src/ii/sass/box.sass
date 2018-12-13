@@ -69,9 +69,8 @@ a
   width: 100%
   padding-left: 20px
   padding-right: 20px
-  margin-left: auto
+  margin: 0 auto
   font-size: inherit
-  margin-right: auto
 
 .blue
   color: #26A9E0
@@ -99,10 +98,6 @@ a
   display: -webkit-flex
   display: -ms-flexbox
   display: flex
-  display: -webkit-inline-box
-  display: -webkit-inline-flex
-  display: -ms-inline-flexbox
-  display: inline-flex
   -webkit-box-align: center
   -webkit-align-items: center
   -ms-flex-align: center
@@ -233,28 +228,48 @@ a
   position: relative
   .content
     margin: 90px 0
-  .content_left
-    width: 500px
-    margin-right: 135px
+    flex-direction: column
+    justify-content: center
+  .content_bottom
+    display: flex
+    flex-direction: row
+    align-items: center
   .title
     margin-bottom: 40px
+    text-align: center
+  .text
+    text-align: center
+    
+  .img_container
+    position: relative
+    width: 560px
+    height: 400px
+    margin: 0 auto
+    overflow: hidden
+    
   .image
-    margin-bottom: 40px
-    display: -webkit-box
-    display: -webkit-flex
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
-    align-items: center
-    a
-      text-decoration: underline
-      width: 220px
-      &:hover
-        text-decoration: none
-    img
-      margin-right: 20px
+    position: absolute
+    width: auto
+    height: auto
+    overflow: hidden
+  a
+    text-decoration: underline
+    width: 220px
+    &:hover
+      text-decoration: none
+  img
+    display: block
+  .controller_line
+    width: 518px
+    left: 25px
+    top: 19px
+  .controller 
+    position: relative
+    width: auto
+    height: auto
+    margin: 0
+    padding: 0
+    cursor: ew-resize
   .link
     display: -webkit-box
     display: -webkit-flex
@@ -266,6 +281,7 @@ a
     align-items: center
   .text_gray
     line-height: 19px
+    text-align: center
 
 @media (max-width: 1850px)
   .circle-8, .circle-7

@@ -69,9 +69,8 @@ a {
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  font-size: inherit;
-  margin-right: auto; }
+  margin: 0 auto;
+  font-size: inherit; }
 
 .blue {
   color: #26A9E0; }
@@ -99,10 +98,6 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -274,29 +269,64 @@ a {
 .box__constructor {
   position: relative; }
   .box__constructor .content {
-    margin: 90px 0; }
-  .box__constructor .content_left {
-    width: 500px;
-    margin-right: 135px; }
-  .box__constructor .title {
-    margin-bottom: 40px; }
-  .box__constructor .image {
-    margin-bottom: 40px;
+    margin: 90px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .box__constructor .content_bottom {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
     -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .box__constructor .image a {
-      text-decoration: underline;
-      width: 220px; }
-      .box__constructor .image a:hover {
-        text-decoration: none; }
-    .box__constructor .image img {
-      margin-right: 20px; }
+        -ms-flex-align: center;
+            align-items: center; }
+  .box__constructor .title {
+    margin-bottom: 40px;
+    text-align: center; }
+  .box__constructor .text {
+    text-align: center; }
+  .box__constructor .img_container {
+    position: relative;
+    width: 560px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden; }
+  .box__constructor .image {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden; }
+  .box__constructor a {
+    text-decoration: underline;
+    width: 220px; }
+    .box__constructor a:hover {
+      text-decoration: none; }
+  .box__constructor img {
+    display: block; }
+  .box__constructor .controller_line {
+    width: 518px;
+    left: 25px;
+    top: 19px; }
+  .box__constructor .controller {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    cursor: ew-resize; }
   .box__constructor .link {
     display: -webkit-box;
     display: -webkit-flex;
@@ -307,7 +337,8 @@ a {
     -ms-flex-align: center;
     align-items: center; }
   .box__constructor .text_gray {
-    line-height: 19px; }
+    line-height: 19px;
+    text-align: center; }
 
 @media (max-width: 1850px) {
   .circle-8, .circle-7 {
