@@ -181,13 +181,13 @@ a
   .text_color
     font-size: 24px
     margin-bottom: 40px
-  .img_box
-    position: relative
-    top: -70px
-    z-index: -1
-  .button
-    width: 250px
-    height: 80px
+.button
+  width: 250px
+  height: 80px
+.img_box
+  position: relative
+  top: -70px
+  z-index: -1
 
 .box__first-step
   .image
@@ -234,27 +234,30 @@ a
   .text_color
     line-height: 19px
     text-align: center
-.content_bottom
-  display: flex
-  flex-direction: row
-  align-items: center
-.img_container
-  position: relative
-  width: 560px
-  height: 400px
-  overflow: hidden
-  margin: 0 30px
-.controller_line
-    width: 518px
-    left: 25px
-    top: 19px
-.controller 
-  position: relative
-  width: auto
-  height: auto
-  margin: 0
-  padding: 0
-  cursor: ew-resize
+  .content_bottom
+    display: flex
+    flex-direction: row
+    align-items: center
+  .img_container
+    position: relative
+    width: 560px
+    height: 400px
+    overflow: hidden
+    margin: 0 30px
+  .controller_line
+      width: 518px
+      left: 25px
+      top: 19px
+  .controller 
+    position: relative
+    width: auto
+    height: auto
+    margin: 0
+    padding: 0
+    cursor: ew-resize
+  .txt__phone
+    display: none
+
 .books-icon 
   background-image: url(/ii/img/icons/books-sprite.png)
   background-repeat: no-repeat
@@ -486,14 +489,23 @@ a
     
 /* END FOOTER */
 
-@media (max-width: 1550px)
-  .circle-1, .circle-6, .circle-4, .circle-5, img.circle-7
+@media screen and (max-width: 1550px)
+  .circle-1, .circle-6, .circle-4, .circle-5, img.circle-7, .txt__phone
     display: none
     
-@media (max-width: 940px)
+@media screen and (max-width: 940px)
+  .box__constructor
+    .content_bottom
+      flex-direction: column
+    .txt__phone 
+      display: flex
+      a
+        width: 300px
+    .txt_screen
+      display: none
   .text
-    font-size: 19px
-    line-height: 21px
+    font-size: 24px
+    line-height: 28px
   .title
     font-size: 43px
   .img_container
@@ -503,3 +515,82 @@ a
     line-height: 64px
   .circle-2
     display: none
+@media screen and (max-width: 650px)
+  .text
+    text-align: center
+    font-size: 36px
+    line-height: 44px
+  .title  
+    text-align: center
+    font-size: 68px
+    line-height: 78px
+  .content
+    flex-direction: column
+  .content_right
+    width: 90%
+  .content_left
+    width: 90%
+  .img_box
+    width: 100%
+    top: 0
+  .button
+    width: 50%
+    margin: 40px auto
+  .circle-3
+    display: none
+  .header
+    .container
+      flex-direction: column
+    .menu
+      font-size: 24px
+      margin-bottom: 30px
+
+  .box__prime
+    .title
+      text-align: center
+      font-size: 68px
+      line-height: 78px
+    .text
+      margin-bottom: 0
+
+  .box__first-step
+    .content
+      flex-direction: column-reverse
+    .image
+      margin-top: 0
+    .content_left
+      margin-right: 0
+    .content_right
+      margin-top: 60px
+  .box__second-step
+    .content_left
+      margin-top: 60px
+    .image
+      top: 0
+  .box__third-step
+    .content
+      flex-direction: column-reverse
+    .content_left
+      margin: 0 0 60px
+    .content_right
+      margin: 60px 0
+      .image
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 20px
+      .text_color
+        text-align: center
+  .box__constructor
+    .content_top
+      width: 90%
+    .text_color
+      font-size: 24px
+    .content_bottom
+      flex-direction: column
+    .txt__phone 
+      display: flex
+      a
+        width: 300px
+    .txt_screen
+      display: none
