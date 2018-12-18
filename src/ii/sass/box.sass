@@ -131,8 +131,7 @@ a
   font-size: 24px
   line-height: 28px
   text-align: center
-  -webkit-box-shadow: 2px 10px 66px -9px #74489D
-  box-shadow: 2px 10px 66px -9px #74489D
+  box-shadow: 0px 10px 20px rgba(116, 72, 157, 0.4)
   &:hover
     opacity: 0.9
 .header
@@ -171,16 +170,13 @@ a
 .active a
   opacity: 1
     
-.box__prime
-  .title
-    font-size: 72px
-    line-height: 73px
-  .text
-    padding-right: 10px
-    margin-bottom: 85px
-  .text_color
-    font-size: 24px
-    margin-bottom: 40px
+
+.prime__title
+  font-size: 72px
+  line-height: 73px
+.prime__text
+  padding-right: 10px
+  margin-bottom: 85px
 .button
   width: 250px
   height: 80px
@@ -189,32 +185,22 @@ a
   top: -70px
   z-index: -1
 
-.box__first-step
-  .image
-    margin-top: 170px
+.first-step__image
+  margin-top: 170px
 
-.box__second-step
+.second-step
   position: relative
-  .image
+.second-step__image
     position: relative
     top: -70px
 
-.box__third-step
+.third-step
   position: relative
-  .content_left
-    margin: 117px 100px 117px 0
+.third-step__image
+    margin: 117px 0 117px 0
 
-.box__constructor
+.constructor
   position: relative
-  .content
-    margin: 90px 0
-    flex-direction: column
-    justify-content: center
-  .image
-    position: absolute
-    width: auto
-    height: auto
-    overflow: hidden
   a
     text-decoration: underline
     width: 220px
@@ -222,41 +208,43 @@ a
       text-decoration: none
   img
     display: block
-  .link
-    display: -webkit-box
-    display: -webkit-flex
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
-    align-items: center
-  .text_color
-    line-height: 19px
-    text-align: center
-  .content_bottom
-    display: flex
-    flex-direction: row
-    align-items: center
-  .img_container
-    position: relative
-    width: 560px
-    height: 400px
-    overflow: hidden
-    margin: 0 30px
-  .controller_line
-      width: 518px
-      left: 25px
-      top: 19px
-  .controller 
-    position: relative
-    width: auto
-    height: auto
-    margin: 0
-    padding: 0
-    cursor: ew-resize
-  .txt__phone
-    display: none
+    
+.constructor__content
+  margin: 90px 0
+  flex-direction: column
+  justify-content: center
+.constructor__image
+  position: absolute
+  width: auto
+  height: auto
+  overflow: hidden
+
+.constructor__text_color
+  line-height: 19px
+  text-align: center
+.content_bottom
+  display: flex
+  flex-direction: row
+  align-items: center
+.img_container
+  position: relative
+  width: 560px
+  height: 400px
+  overflow: hidden
+  margin: 0 30px
+.controller_line
+  width: 518px
+  left: 25px
+  top: 19px
+.controller 
+  position: relative
+  width: auto
+  height: auto
+  margin: 0
+  padding: 0
+  cursor: ew-resize
+.txt__phone
+  display: none   
 
 .books-icon 
   background-image: url(/ii/img/icons/books-sprite.png)
@@ -494,15 +482,13 @@ a
     display: none
     
 @media screen and (max-width: 940px)
-  .box__constructor
-    .content_bottom
-      flex-direction: column
-    .txt__phone 
-      display: flex
-      a
-        width: 300px
-    .txt_screen
-      display: none
+  .content_bottom
+    flex-direction: column
+  .txt__phone 
+    display: flex
+     
+  .txt_screen
+    display: none
   .text
     font-size: 24px
     line-height: 28px
@@ -510,11 +496,12 @@ a
     font-size: 43px
   .img_container
     margin: 0 15px
-  .box__prime .title 
+  .prime .title 
     font-size: 56px
     line-height: 64px
   .circle-2
     display: none
+    
 @media screen and (max-width: 650px)
   .text
     text-align: center
@@ -538,59 +525,67 @@ a
     margin: 40px auto
   .circle-3
     display: none
+    
   .header
     .container
       flex-direction: column
-    .menu
-      font-size: 24px
-      margin-bottom: 30px
+  .menu
+    font-size: 24px
+    margin-bottom: 30px
 
-  .box__prime
-    .title
-      text-align: center
-      font-size: 68px
-      line-height: 78px
-    .text
-      margin-bottom: 0
-
-  .box__first-step
-    .content
+  .prime__title
+    text-align: center
+    font-size: 68px
+    line-height: 78px
+  .prime__text
+    margin-bottom: 0
+  .reverse
       flex-direction: column-reverse
-    .image
-      margin-top: 0
+
+  .first-step
     .content_left
       margin-right: 0
     .content_right
       margin-top: 60px
-  .box__second-step
+  .first-step__image
+    margin-top: 0
+    
+  .second-step
     .content_left
       margin-top: 60px
-    .image
-      top: 0
-  .box__third-step
-    .content
-      flex-direction: column-reverse
+  .second-step__image
+    top: 0
+    
+  .third-step
     .content_left
       margin: 0 0 60px
     .content_right
       margin: 60px 0
-      .image
-        display: flex
-        align-items: center
-        justify-content: center
-        margin-bottom: 20px
       .text_color
         text-align: center
-  .box__constructor
-    .content_top
+  .third-step__image
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 20px
+    
+  .constructor a
+    width: 300px
+  .constructor__text_color
+    font-size: 24px
+    line-height: 28px
+  .content_top
       width: 90%
-    .text_color
-      font-size: 24px
-    .content_bottom
-      flex-direction: column
-    .txt__phone 
-      display: flex
-      a
-        width: 300px
-    .txt_screen
-      display: none
+  .content_bottom
+    flex-direction: column
+  .txt__phone 
+    display: flex
+    .text
+      font-size: 32px
+      line-height: 36px
+  .txt_screen
+    display: none
+  .image__phone
+    display: flex
+    -webkit-justify-content: center
+    justify-content: center
