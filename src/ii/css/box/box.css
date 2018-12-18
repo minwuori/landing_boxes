@@ -221,6 +221,10 @@ a {
   padding-right: 10px;
   margin-bottom: 85px; }
 
+.prime__text_color {
+  font-size: 24px;
+  margin-bottom: 40px; }
+
 .button {
   width: 250px;
   height: 80px; }
