@@ -86,6 +86,19 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
+  /* scrollToTop */
+    var scrollToTopElement = $('.scrollToTop');
+    $(window).scroll(function() {
+        var range = $(this).scrollTop();
+        (range > 500) ? scrollToTopElement.fadeIn('1000') : scrollToTopElement.fadeOut('1000');
+    });
+
+    scrollToTopElement.on('click', function(event) {
+        $('body,html').animate({
+            scrollTop: 0
+        }, '600');
+    });
+    /* end scrollToTop */
 });
 
 

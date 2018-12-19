@@ -183,23 +183,20 @@
                     </div>
                 </div>
             </div>
-
+            
             <footer class="footer">
                 <div class="container">
                     <div class="footer-wrap">
-                
                         <div class="footer-section">
                             <p class="footer-section__title"><span class="books-icon books-icon_white"></span>В наших магазинах</p>
                             <ul class="footer-list">
                                 <li class="footer-list__item"><a href="/shops/">Адреса магазинов</a></li>
                                 <li class="footer-list__item"><a href="/services/">Услуги</a></li>
                                 <li class="footer-list__item"><a href="/partners/">Наши партнеры</a></li>
-                                <li class="footer-list__item"><a href="/about/index.php">О компании</a></li>
+                                <li class="footer-list__item"><a href="/about/">О компании</a></li>
                                 <li class="footer-list__item"><a href="/want_to_work_for_us/">Хотите у нас работать?</a></li>
-                    
                             </ul>
                         </div>
-                        
                         <div class="footer-section">
                             <p class="footer-section__title"><i class="material-icons"></i>В интернет-магазине</p>
                             <ul class="footer-list">
@@ -207,78 +204,62 @@
                                 <li class="footer-list__item"><a href="/actions/">Акции</a></li>
                                 <li class="footer-list__item"><a href="/catalog/books/">Книги</a></li>
                                 <li class="footer-list__item"><a href="/catalog/souvenirs/">Сувениры</a></li>
-                                <li class="footer-list__item"><a href="/about/rules.php">Правила продажи</a></li>
-                                <li class="footer-list__item"><a href="/about/policy.php">Политика конфиденциальности</a></li>
+                                <li class="footer-list__item"><a href="/about/rules/">Правила продажи</a></li>
+                                <li class="footer-list__item"><a href="/about/policy/">Политика конфиденциальности</a></li>
                             </ul>
                         </div>
-                        
                         <div class="footer-section footer-section_subscribe">
                             <p class="footer-section__title"><i class="material-icons"></i>Подписка на новости</p>
                             <div class="subscribe">
                                 <p class="subscribe-descr">Будьте в курсе наших акций:</p>
                                 <form class="subscribe-form">
-
-                                    <input class="input subscribe__input  js__subscribe-email" type="text" placeholder="E-mail" name="email" autocomplete="on">
-                                    <button class="btn_normal js__subscribe-btn" type="submit">Подписаться</button>
-
+                                    <input class="input subscribe__input  js__subscribe-email"
+                                           type="text"
+                                           placeholder="E-mail"
+                                           name="email"
+                                           autocomplete="on">
+                                    <button class="btn_normal js__subscribe-btn"
+                                            type="submit">Подписаться
+                                    </button>
                                 </form>
+                                <div class="fs_2 mb_1 js_subscribe_mess" style="color: white;"></div>
                             </div>
                             <div class="footer__social">
                                 <p class="text">Мы в соцсетях:</p>
                                 <ul class="social__list">
                                     <li class="social__btn vk">
-                                        <a href="http://vk.com/chitaigorod" rel="nofollow"></a>
+                                        <a href="http://vk.com/chitaigorod"
+                                           rel="nofollow"></a>
                                     </li>
                                     <li class="social__btn fb">
-                                        <a href="http://www.facebook.com/chitaigorod" rel="nofollow"></a>
+                                        <a href="http://www.facebook.com/chitaigorod"
+                                           rel="nofollow"></a>
                                     </li>
                                     <li class="social__btn tw">
-                                        <a href="http://twitter.com/chitaigorod" rel="nofollow"></a>
+                                        <a href="http://twitter.com/chitaigorod"
+                                           rel="nofollow"></a>
                                     </li>
                                     <li class="social__btn ok">
-                                        <a href="http://ok.ru/chitaigorod" rel="nofollow"></a>
+                                        <a href="http://ok.ru/chitaigorod"
+                                           rel="nofollow"></a>
                                     </li>
                                     <li class="social__btn in">
-                                        <a href="https://www.instagram.com/chitai_gorod/" rel="nofollow"></a>
+                                        <a href="https://www.instagram.com/chitai_gorod/"
+                                           rel="nofollow"></a>
                                     </li>
                                     <li class="social__btn yb">
-                                        <a href="https://www.youtube.com/channel/UCbsqXVnwSqer9QttshVs76A" rel="nofollow">
+                                        <a href="https://www.youtube.com/channel/UCbsqXVnwSqer9QttshVs76A"
+                                           rel="nofollow">
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-
-
-                        <script>
-                            function subscribe(e) {
-                                var form = $('.subscribe-form');
-                                var email = form.find('.js__subscribe-email');
-                                e = $(e);
-                                
-                                if (email.val().length > 0) {
-                                    $.ajax({
-                                        url: '/local/rest/subscribe/',
-                                        data: {email: email.val()},
-                                        success: function (e) {
-                                            var res = parseInt(e);  //1 - if add new subscriber, 0 - false add
-                                            var textRes = (res) ? 'На Ваш email отправлено письмо для подтверждения подписки' : 'Вы уже подписаны на рассылку';
-
-                                            form.children().slideUp(200);
-                                            form.append('<p class="text color_white">' + textRes + '</p>');
-                                            email.val('');
-                                        }
-                                    });
-                                }
-                            }
-                        </script>
-
                     </div>
-
                     <div class="footer-wrap">
                         <div class="copyright">
                             <p class="text">
-                                2011—<?=date(Y)?>, ООО «Новый Книжный Центр». Перепечатка материалов сайта возможна
+                                2011—2018, ООО «Новый Книжный Центр». Перепечатка материалов сайта возможна
                                 только с указанием активной ссылки на сайт «Читай–город».
                             </p>
                         </div>
@@ -293,31 +274,10 @@
                 </div>
             </footer>
 
-            <!--action_pay-->
-            <script type="text/javascript">
-                (function (w, d) {
-                    try {
-                        var el = 'getElementsByTagName', rs = 'readyState';
-                        if (d[rs] !== 'interactive' && d[rs] !== 'complete') {
-                            var c = arguments.callee;
-                            return setTimeout(function () { c(w, d) }, 100);
-                        }
-                        var s = d.createElement('script');
-                        s.type = 'text/javascript';
-                        s.async = s.defer = true;
-                        s.src = '//aprtx.com/code/chitai-gorod/';
-                        var p = d[el]('body')[0] || d[el]('head')[0];
-                        if (p) p.appendChild(s);
-                    } catch (x) { if (w.console) w.console.log(x); }
-                })(window, document);
-            </script>
-            <!--/action_pay-->
-
-            <!-- BEGIN JIVOSITE CODE literal -->
-            <script type='text/javascript'>
-            (function(){ var widget_id = 'd35rHgsfuf';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
-            <!-- /literal END JIVOSITE CODE -->
+            <div class="scrollToTop" style="display: none;"></div>
+            
         </div>
+
         <script type="text/javascript" src="/ii/js/box/box.js"></script>
 
     </body>

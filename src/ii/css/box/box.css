@@ -221,10 +221,6 @@ a {
   padding-right: 10px;
   margin-bottom: 85px; }
 
-.prime__text_color {
-  font-size: 24px;
-  margin-bottom: 40px; }
-
 .button {
   width: 250px;
   height: 80px; }
@@ -526,7 +522,25 @@ a {
   line-height: 14px;
   color: rgba(255, 255, 255, 0.6); }
 
-/* END FOOTER */
+.scrollToTop {
+  position: fixed;
+  bottom: 50px;
+  left: 40px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: url(/ii/img/icons/scrollToTop.png) no-repeat 50% 50% rgba(38, 169, 224, 0.5);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  z-index: 100; }
+
+.scrollToTop:hover {
+  background-color: #26a9e0; }
+
 @media screen and (max-width: 1550px) {
   .circle-1, .circle-6, .circle-4, .circle-5, img.circle-7, .txt__phone {
     display: none; } }
